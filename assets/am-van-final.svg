@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 901 421" width="901" height="421" role="img" aria-labelledby="title desc">
+  <title id="title">A&amp;M Plumbing themed van</title>
+  <desc id="desc">The supplied van image kept intact and rebranded with A&amp;M Plumbing red, black, and white graphics.</desc>
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="9" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="amRed" x1="0" x2="1">
+      <stop offset="0" stop-color="#9b0000"/>
+      <stop offset="0.38" stop-color="#e00000"/>
+      <stop offset="1" stop-color="#b00000"/>
+    </linearGradient>
+    <linearGradient id="amBlack" x1="0" x2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.52" stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <clipPath id="vanClip">
+      <path d="M21 251 C31 206 50 186 91 173 L151 153 L227 66 C260 32 318 44 392 41 L827 40 C862 40 879 53 884 91 L889 282 C889 330 859 352 810 354 L104 355 C59 354 20 317 21 251 Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Exact supplied van remains visible as the base image. -->
+    <image href="van-source.png" x="0" y="0" width="901" height="421" preserveAspectRatio="xMidYMid meet"/>
+
+    <!-- Recolor only the Hoover blue wrap areas to A&M black while keeping the van's real shadows and shape. -->
+    <g clip-path="url(#vanClip)">
+      <path d="M38 224 C165 230 318 238 490 236 C650 234 770 224 874 196 L874 236 C676 250 460 262 31 256 Z" fill="url(#amRed)" opacity="0.92"/>
+      <path d="M27 260 C188 266 399 269 554 260 C690 252 805 239 879 218 L881 293 C700 302 473 311 27 315 Z" fill="url(#amBlack)" opacity="0.88"/>
+      <path d="M29 253 C257 263 621 257 876 206" fill="none" stroke="#ffffff" stroke-width="7" opacity="0.9"/>
+      <path d="M29 223 C259 238 626 233 874 184" fill="none" stroke="#d40000" stroke-width="9" opacity="0.85"/>
+    </g>
+
+    <!-- Replace the original side logo only, in the same general location and scale. -->
+    <g transform="translate(555 92)">
+      <rect x="0" y="0" width="250" height="92" rx="4" fill="#050505" stroke="#d40000" stroke-width="7"/>
+      <rect x="10" y="10" width="230" height="72" rx="2" fill="#ffffff" stroke="#050505" stroke-width="3"/>
+      <text x="125" y="48" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="54" font-weight="900" fill="#d00000" stroke="#050505" stroke-width="2.5" paint-order="stroke fill" letter-spacing="2">A&amp;M</text>
+      <text x="125" y="75" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#d00000" stroke="#050505" stroke-width="1.2" paint-order="stroke fill" letter-spacing="1.2">PLUMBING</text>
+      <text x="125" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#ffffff" letter-spacing=".9">Water Heaters · Drains · Leaks</text>
+    </g>
+
+    <!-- Replace website text on the driver's side panel. -->
+    <rect x="364" y="119" width="188" height="24" rx="5" fill="#f4f2ec" opacity="0.96"/>
+    <text x="458" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#d00000">A&amp;M Plumbing</text>
+
+    <!-- Replace the stripe slogan, using the same red stripe position on the real van. -->
+    <path d="M287 234 L703 229 L705 262 L286 266 Z" fill="url(#amRed)" opacity="0.96"/>
+    <text x="497" y="257" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#ffffff" stroke="#a00000" stroke-width="1" paint-order="stroke fill" letter-spacing=".8">WHEN YOU WANT IT DONE RIGHT, CALL A&amp;M!</text>
+
+    <!-- Clean A&M phone number on the black lower wrap. -->
+    <path d="M612 272 L826 268 L826 318 L612 323 Z" fill="#101010" opacity="0.94"/>
+    <text x="720" y="308" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="34" font-weight="900" fill="#ffffff" stroke="#050505" stroke-width="2" paint-order="stroke fill" letter-spacing="1">248-240-0384</text>
+
+    <!-- Small round A&M mark at the front where the original circular fleet mark is. -->
+    <circle cx="101" cy="245" r="25" fill="#ffffff" stroke="#d40000" stroke-width="6"/>
+    <text x="101" y="254" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="23" font-weight="900" fill="#d00000" stroke="#050505" stroke-width="1" paint-order="stroke fill">A&amp;M</text>
+  </g>
+</svg>
